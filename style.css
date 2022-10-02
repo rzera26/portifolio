@@ -1,0 +1,24 @@
+.titleHome{
+    margin-top: 15vh;
+    margin-left: 10vw;
+}
+.subTitleHome{
+    margin-left: 10vw;
+    font-size: 25px;
+}
+
+#iconsNav{
+    margin-right: 5px;
+    font-size: 15px;
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom:0;
+    width:100%;
+    margin: auto auto;
+    padding: 10px 5px;
+    text-align: center;
+}

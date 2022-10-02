@@ -1,0 +1,43 @@
+.titleProject {
+    margin-top: 5vh;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+}
+
+.containerList {
+    display: flex;
+    justify-content: center;
+}
+
+.listImg {
+    flex-direction: row;
+    display: flex;
+    list-style: none;
+
+}
+
+.itemList {
+    margin: 20px;
+}
+
+.imgs {
+    height: 550px;
+}
+
+#iconsNav{
+    margin-right: 5px;
+    font-size: 15px;
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom:0;
+    width:100%;
+    margin: auto auto;
+    padding: 10px 5px;
+    text-align: center;
+}

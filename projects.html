@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projetos</title>
+  <link rel="stylesheet" href="styleProjects.css">
+  <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html">Raul Campos</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./projects.html"><i id="iconsNav" class="fa fa-code"
+                aria-hidden="true"></i>Projetos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.linkedin.com/in/raul-campos-9a836b184/" target="_blank"><i
+                id="iconsNav" class="fa fa-linkedin-square" aria-hidden="true"></i>LinkedIn</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Mais...
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./contact.html"><i id="iconsNav" class="fa fa-address-book"
+                    aria-hidden="true"></i>Contato</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="toast-container position-fixed bottom-10 end-0 p-3">
+    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header">
+        <img src="..." class="rounded me-2" alt="...">
+        <strong class="me-auto">Portifólio</strong>
+        <small>agora</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        Espero que goste dos meus projetos!
+      </div>
+    </div>
+  </div>
+
+  <p class='titleProject'>Projeto realizado com Expo e banco de dados Firebase. Para recuperação de senha foi feita uma
+    API para um bot que automaticamente manda mensagem para o WhatsApp cadastrado. Bot foi criado com Puppeteer e
+    Express.</p>
+  <div class='containerList'>
+    <ul class='listImg'>
+      <li class='itemList'><img class='imgs' src='./imgs/imgLogin.jpg' /></li>
+      <li class='itemList'><img class='imgs' src='./imgs/imgSignup.jpg' /></li>
+      <li class='itemList'><img class='imgs' src='./imgs/imgModifyuser.jpg' /></li>
+      <li class='itemList'><img class='imgs' src='./imgs/imgHomepadrao.jpg' /></li>
+      <li class='itemList'><img class='imgs' src='./imgs/imgHomedark.jpg' /></li>
+      <li class='itemList'><img class='imgs' src='./imgs/imgForgotpassword.jpg' /></li>
+    </ul>
+  </div>
+
+  <div class="footer"><p>© 2022 Copyright: <a>Raul Campos</a></p></div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
+  </script>
+<script src="./scriptProjects.js"></script>
+
+</html>
