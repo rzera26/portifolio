@@ -12,7 +12,8 @@
 }
 
 .listImg {
-    flex-direction: row;
+    flex-direction:row;
+    flex-wrap:wrap;
     display: flex;
     list-style: none;
 
