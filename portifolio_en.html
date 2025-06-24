@@ -370,47 +370,46 @@
 
                 /* --- RESPONSIVIDADE --- */
                 @media (max-width: 768px) {
-                        .secao {
-                                padding: 80px 5%;
-                        }
+            /* Garante que o conteúdo seja visível e não dependa de animação */
+            .secao {
+                padding: 80px 5%;
+                opacity: 1;
+                transform: none;
+                min-height: 0; /* Altura automática baseada no conteúdo */
+                height: auto;
+            }
+            #apresentacao {
+                height: 100vh; /* Mantém a primeira seção com tela cheia */
+            }
 
-                        .apresentacao-conteudo h1 {
-                                font-size: 2.8rem;
-                        }
+            .apresentacao-conteudo h1 { font-size: 2.8rem; }
+            .apresentacao-conteudo p { font-size: 1.2rem; }
+            h2.titulo-secao { font-size: 2.2rem; }
 
-                        .apresentacao-conteudo p {
-                                font-size: 1.2rem;
-                        }
+            /* --- LAYOUT SIMPLIFICADO PARA A TIMELINE --- */
+            /* Remove a linha e os posicionamentos complexos do desktop */
+            .timeline::after {
+                display: none;
+            }
 
-                        h2.titulo-secao {
-                                font-size: 2.2rem;
-                        }
+            .container-timeline,
+            .container-timeline.right,
+            .container-timeline.left {
+                width: 100%; /* Ocupa toda a largura */
+                left: 0;     /* Reseta o posicionamento */
+                padding: 0;  /* Reseta o padding */
+            }
 
-                        /* --- CORREÇÃO DA TIMELINE --- */
-                        .timeline::after {
-                                left: 20px;
-                                /* Move a linha vertical para a esquerda */
-                        }
+            /* Remove as "bolinhas" da linha do tempo */
+            .container-timeline::after {
+                display: none;
+            }
 
-                        .container-timeline {
-                                width: 100%;
-                                padding-left: 70px;
-                                /* Aumenta o espaço para o conteúdo não sobrepor a linha */
-                                padding-right: 25px;
-                        }
-
-                        /* Remove o deslocamento para a esquerda de AMBOS os lados */
-                        .container-timeline.left,
-                        .container-timeline.right {
-                                left: 0;
-                        }
-
-                        .container-timeline.left::after,
-                        .container-timeline.right::after {
-                                left: 12px;
-                                /* Posiciona a bolinha na linha vertical */
-                        }
-                }
+            /* Adiciona um espaço entre os blocos de experiência */
+            .conteudo-timeline {
+                margin-bottom: 30px;
+            }
+        }
         </style>
 </head>
 
