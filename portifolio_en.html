@@ -386,23 +386,29 @@
                                 font-size: 2.2rem;
                         }
 
+                        /* --- CORREÇÃO DA TIMELINE --- */
                         .timeline::after {
                                 left: 20px;
+                                /* Move a linha vertical para a esquerda */
                         }
 
                         .container-timeline {
                                 width: 100%;
-                                padding-left: 60px;
-                                padding-right: 15px;
+                                padding-left: 70px;
+                                /* Aumenta o espaço para o conteúdo não sobrepor a linha */
+                                padding-right: 25px;
                         }
 
+                        /* Remove o deslocamento para a esquerda de AMBOS os lados */
+                        .container-timeline.left,
                         .container-timeline.right {
-                                left: 0%;
+                                left: 0;
                         }
 
                         .container-timeline.left::after,
                         .container-timeline.right::after {
                                 left: 12px;
+                                /* Posiciona a bolinha na linha vertical */
                         }
                 }
         </style>
